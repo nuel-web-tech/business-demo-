@@ -3,149 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nuel Web Tech | Smart Digital Solutions</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: white;
-    }
-
-    header {
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.1em;
-      opacity: 0.9;
-    }
-
-    .container {
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .card {
-      background: rgba(255, 255, 255, 0.08);
-      border-radius: 15px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    }
-
-    .card h2 {
-      margin-top: 0;
-      color: #00ffd5;
-    }
-
-    .services li {
-      margin: 10px 0;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 12px 25px;
-      background: #00ffd5;
-      color: #000;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: white;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      opacity: 0.7;
-    }
-  </style>
+  <title>{{BUSINESS_NAME}}</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
+  <!-- Header / Logo -->
   <header>
-    <h1>🚀 Nuel Web Tech</h1>
-    <p>Smart websites • Clean design • Real digital value</p>
+    <img src="images/logo.png" alt="{{BUSINESS_NAME}} Logo" class="logo">
+    <h1>Welcome to {{BUSINESS_NAME}}</h1>
+    <p>{{BUSINESS_TAGLINE}}</p>
   </header>
 
-  <div class="container">
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>{{SERVICE_1}}</li>
+      <li>{{SERVICE_2}}</li>
+      <li>{{SERVICE_3}}</li>
+    </ul>
+  </section>
 
-    <div class="card">
-      <h2>Who We Are</h2>
-      <p>
-        Nuel Web Tech is a digital service brand focused on creating clean,
-        modern, and mobile-friendly websites for individuals, startups,
-        and small businesses.
-      </p>
-    </div>
+  <!-- Contact Form -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="formStatus"></p>
+  </section>
 
-    <div class="card">
-      <h2>What We Do</h2>
-      <ul class="services">
-        <li>🌐 Website Design & Development</li>
-        <li>📱 Mobile-Friendly Business Pages</li>
-        <li>⚡ Fast & Lightweight Websites</li>
-        <li>🎨 Modern UI & Clean Layouts</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>Why Choose Us?</h2>
-      <p>
-        We focus on simplicity, speed, and value.
-        Our websites are easy to use, attractive,
-        and built to help your business grow online.
-      </p>
-
-      <a href="#" class="btn">Get Started</a>
-    </div>
-
-  </div>
-
-  <footer>
-    © 2026 Nuel Web Tech • Built with passion 💙
-  </footer>
-
-  <a href="https://wa.me/2349168150082" target="_blank" class="whatsapp-btn">
-  Chat with us on WhatsApp
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/{{WHATSAPP_NUMBER}}" target="_blank" class="whatsapp-btn">
+    Chat with us on WhatsApp
   </a>
 
-  <style>
-.whatsapp-btn {
-  position: fixed;          /* stays visible even when scrolling */
-  bottom: 30px;             /* distance from bottom */
-  right: 30px;              /* distance from right */
-  background-color: #25D366; 
-  color: white;
-  padding: 15px 25px;
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 50px;      /* round edges */
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-  transition: transform 0.2s, background-color 0.2s;
-  z-index: 1000;            /* always on top */
-}
-.whatsapp-btn:hover {
-  background-color: #1ebe5d;
-  transform: scale(1.05);
-}
-  </style>
-  
+  <script src="script.js"></script>
 </body>
 </html>
